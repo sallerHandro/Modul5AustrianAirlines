@@ -4,8 +4,9 @@ public abstract class Rabattstrategie extends Angebot{
 
     private String bezeichnung;
 
-    public Rabattstrategie(double regulaerpreis, LocalDate flugdatum, String flugnummer) {
+    public Rabattstrategie(double regulaerpreis, LocalDate flugdatum, String flugnummer, String bezeichnung) {
         super(regulaerpreis, flugdatum, flugnummer);
+        this.bezeichnung = bezeichnung;
     }
 
     public abstract double getReduzierterPreis(double regulaerPreis);
