@@ -1,21 +1,23 @@
-import java.time.LocalDate;
+public class Rabattstrategie{
 
-public abstract class Rabattstrategie{
+    private final double rabatt;
 
-    private String bezeichnung;
-
-    public Rabattstrategie(String bezeichnung) {
-        this.bezeichnung = bezeichnung;
-
+    public Rabattstrategie(double rabatt) {
+        this.rabatt = rabatt;
     }
 
-    public abstract double getReduzierterPreis(double regulaerPreis);
-
-    public String getBezeichnung() {
-        return bezeichnung;
+    public double getReduzierterPreis(double regulaerPreis) {
+        return regulaerPreis * (1 - this.rabatt);
     }
 
-    public void setBezeichnung(String bezeichnung) {
-        this.bezeichnung = bezeichnung;
+    public double getRabatt() {
+        return rabatt;
+    }
+
+    @Override
+    public String toString() {
+        return "Rabattstrategie{" +
+                "rabatt=" + rabatt +
+                '}';
     }
 }
