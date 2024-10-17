@@ -1,12 +1,12 @@
 import java.time.LocalDate;
 
-public abstract class Rabattstrategie extends Angebot{
+public abstract class Rabattstrategie{
 
     private String bezeichnung;
 
-    public Rabattstrategie(double regulaerpreis, LocalDate flugdatum, String flugnummer, String bezeichnung) {
-        super(regulaerpreis, flugdatum, flugnummer);
+    public Rabattstrategie(String bezeichnung) {
         this.bezeichnung = bezeichnung;
+
     }
 
     public abstract double getReduzierterPreis(double regulaerPreis);

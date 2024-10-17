@@ -14,6 +14,5 @@ public class Main {
             rabattstrategie = new ZeroDiscount(100, flugdatum, "3", "Kein Rabatt");
         }
         System.out.println(rabattstrategie);
-        System.out.println(rabattstrategie.getReduzierterPreis(rabattstrategie.getRegulaerpreis()));
     }
 }
