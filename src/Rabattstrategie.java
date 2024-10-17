@@ -6,7 +6,7 @@ public class Rabattstrategie{
         this.rabatt = rabatt;
     }
 
-    public double getReduzierterPreis(double regulaerPreis) {
+    public double getReduziertenPreis(double regulaerPreis) {
         return regulaerPreis * (1 - this.rabatt);
     }
 

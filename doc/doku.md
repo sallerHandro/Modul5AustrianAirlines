@@ -10,3 +10,5 @@
 ## Commit 5
 - Ändern des kompletten Codes
 - keine Codeduplikate mehr
+## Commit 6
+- feinschliff

@@ -47,8 +47,8 @@ public class Angebot {
         this.flugnummer = flugnummer;
     }
 
-    public double getPreisMitRabatt(){
-        return this.regulaerpreis * (1-rabattstrategie.getRabatt());
+    public double getReduziertenPreis(){
+        return this.rabattstrategie.getReduziertenPreis(this.regulaerpreis);
     }
 
     @Override
