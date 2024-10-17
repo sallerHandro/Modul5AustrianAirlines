@@ -12,3 +12,5 @@
 - keine Codeduplikate mehr
 ## Commit 6
 - feinschliff
+## Commit 7
+- Änder der Klassenhirarchie: Rabattstrategie erbt von Angebot
