@@ -3,8 +3,8 @@ import java.time.LocalDate;
 public class MaxiDiscount extends Rabattstrategie{
     private final double rabatt = 0.3;
 
-    public MaxiDiscount(double regulaerpreis, LocalDate flugdatum, String flugnummer, String bezeichnung) {
-        super(regulaerpreis, flugdatum, flugnummer, bezeichnung);
+    public MaxiDiscount(String bezeichnung){
+        super(bezeichnung);
     }
 
     @Override
